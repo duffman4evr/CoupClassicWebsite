@@ -15,5 +15,7 @@ phases:
     commands:
       - echo Build completed on `date`
 artifacts:
+  discard-paths: yes
   files:
     - target/website-1.0-SNAPSHOT.jar
+    - target/config-prod.yml
