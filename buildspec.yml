@@ -18,4 +18,4 @@ artifacts:
   discard-paths: yes
   files:
     - target/website-1.0-SNAPSHOT.jar
-    - target/config-prod.yml
+    - config-prod.yml
