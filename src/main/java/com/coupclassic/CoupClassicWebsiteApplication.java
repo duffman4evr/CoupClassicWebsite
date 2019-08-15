@@ -1,6 +1,7 @@
 package com.coupclassic;
 
 import com.coupclassic.resources.HelloWorldResource;
+import com.coupclassic.resources.PingResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -26,5 +27,6 @@ public class CoupClassicWebsiteApplication extends Application<CoupClassicWebsit
                     final Environment environment) {
         final HelloWorldResource helloWorldResource = new HelloWorldResource(configuration.getStage());
         environment.jersey().register(helloWorldResource);
+        environment.jersey().register(new PingResource());
     }
 }
