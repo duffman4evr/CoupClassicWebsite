@@ -1,0 +1,31 @@
+stage: Prod
+server:
+  requestLog:
+    appenders:
+      - type: file
+        currentLogFilename: /var/coupclassic/request.log
+        threshold: ALL
+        queueSize: 512
+        discardingThreshold: 0
+        archive: true
+        archivedLogFilenamePattern: /var/coupclassic/request-%d.log.gz
+        archivedFileCount: 14
+        timeZone: UTC
+        bufferSize: 8KB
+        immediateFlush: true
+logging:
+  level: INFO
+  appenders:
+    - type: file
+      currentLogFilename: /var/coupclassic/application.log
+      threshold: ALL
+      queueSize: 512
+      discardingThreshold: 0
+      archive: true
+      archivedLogFilenamePattern: /var/coupclassic/application-%d.log.gz
+      archivedFileCount: 14
+      timeZone: UTC
+      includeCallerData: true
+      logFormat: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+      bufferSize: 8KB
+      immediateFlush: true

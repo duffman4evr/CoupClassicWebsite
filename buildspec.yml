@@ -18,4 +18,5 @@ artifacts:
   discard-paths: yes
   files:
     - target/website-1.0-SNAPSHOT.jar
-    - config-prod.yml
+    - dropwizard-config/config-prod.yml
+    - systemd/coupclassicwebsite.service

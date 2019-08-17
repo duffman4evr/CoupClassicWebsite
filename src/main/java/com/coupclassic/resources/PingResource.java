@@ -9,7 +9,6 @@ import java.util.Optional;
 
 @Path("/ping")
 public class PingResource {
-
     @GET
     @Timed
     public String ping() {

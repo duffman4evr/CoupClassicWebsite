@@ -1,6 +1,0 @@
-stage: Prod
-logging:
-  level: INFO
-  loggers:
-    com.coupclassic: DEBUG
-

@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+files:
+  - source: website-1.0-SNAPSHOT.jar
+    destination: /var/coupclassic
+  - source: config-prod.yml
+    destination: /var/coupclassic
+  - source: coupclassicwebsite.service
+    destination: /etc/systemd/system/
+permissions:
+  - object: /etc/systemd/system/coupclassicwebsite.service
+    mode: 755
+    type:
+      - file
+hooks:
+  BeforeInstall:
+    - location: scripts/create-directories.sh
+  ApplicationStart:
+    - location: scripts/start-service.sh
