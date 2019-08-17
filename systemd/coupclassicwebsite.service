@@ -3,6 +3,7 @@ Description=Website for Coup Classic WoW Guild
 
 [Service]
 ExecStart=java -jar /var/coupclassic/website-1.0-SNAPSHOT.jar server /var/coupclassic/config-prod.yml
+Type=simple
 
 [Install]
 WantedBy=multi-user.target
