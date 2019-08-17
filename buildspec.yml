@@ -20,3 +20,4 @@ artifacts:
     - target/website-1.0-SNAPSHOT.jar
     - dropwizard-config/config-prod.yml
     - systemd/coupclassicwebsite.service
+    - appspec.yml
