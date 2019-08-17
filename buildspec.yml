@@ -21,3 +21,5 @@ artifacts:
     - dropwizard-config/config-prod.yml
     - systemd/coupclassicwebsite.service
     - appspec.yml
+    - scripts/create-directories.sh
+    - scripts/start-service.sh

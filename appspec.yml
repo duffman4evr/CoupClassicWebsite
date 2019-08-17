@@ -14,6 +14,6 @@ permissions:
       - file
 hooks:
   BeforeInstall:
-    - location: scripts/create-directories.sh
+    - location: create-directories.sh
   ApplicationStart:
-    - location: scripts/start-service.sh
+    - location: start-service.sh
