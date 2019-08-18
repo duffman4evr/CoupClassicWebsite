@@ -17,3 +17,5 @@ hooks:
     - location: create-directories.sh
   ApplicationStart:
     - location: start-service.sh
+  ApplicationStop:
+    - location: stop-service.sh
