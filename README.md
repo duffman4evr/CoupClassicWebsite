@@ -4,8 +4,9 @@ How to start the CoupClassicWebsite application
 ---
 
 1. Run `mvn clean install` to build your application
-1. Start application with `java -jar target/website-1.0-SNAPSHOT.jar server config-prod.yml`
-1. To check that your application is running enter url `http://localhost:8080`
+1. `cd target`
+1. Start application with `java -jar website-1.0-SNAPSHOT.jar server ../dropwizard-config/config-development.yml`
+1. To check that your application is running enter url `http://localhost:8080/about.html`
 
 Health Check
 ---
