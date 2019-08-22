@@ -20,7 +20,7 @@ public class CoupClassicWebsiteApplication extends Application<CoupClassicWebsit
 
     @Override
     public void initialize(final Bootstrap<CoupClassicWebsiteConfiguration> bootstrap) {
-        bootstrap.addBundle(new AssetsBundle("/assets","/", "about.html"));
+        bootstrap.addBundle(new AssetsBundle("/web/assets","/", "index.html"));
     }
 
     @Override
