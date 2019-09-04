@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
+import ScrollableAnchor, { goToAnchor } from "react-scrollable-anchor";
+import AboutUs from './components/AboutUs';
 
 const Global = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=PT+Sans|Raleway');
@@ -65,6 +67,11 @@ function App() {
         <h1>Welcome to Coup</h1>
         <p>An alliance guild on Atiesh</p>
       </header>
+      
+      <ScrollableAnchor id={"about"}>
+      <AboutUs />
+      </ScrollableAnchor>
+
     </div>
   );
 }
