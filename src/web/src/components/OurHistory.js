@@ -1,27 +1,27 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 
-const AboutUsContainer = styled.div`
+const OurHistoryContainer = styled.div`
     width: 100%;
     height: 100vh;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-size: 5rem;
 `
 
-class AboutUs extends Component {
+class OurHistory extends Component {
     render() {
         return (
-            <AboutUsContainer>
+            <OurHistoryContainer>
             <div>
-                Welcome to About Us
+                Welcome to Our History
             </div>
-            </AboutUsContainer>
+            </OurHistoryContainer>
         );
     }
 }
 
-export default AboutUs;
+export default OurHistory;

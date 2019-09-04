@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 
-const AboutUsContainer = styled.div`
+const ContactUsContainer = styled.div`
     width: 100%;
     height: 100vh;
     background-color: white;
@@ -12,16 +12,17 @@ const AboutUsContainer = styled.div`
     font-size: 5rem;
 `
 
-class AboutUs extends Component {
+class ContactUs extends Component {
     render() {
         return (
-            <AboutUsContainer>
+            <ContactUsContainer>
             <div>
-                Welcome to About Us
+                <h1>Contact Us</h1>
+                <h5>Please seek Evilmonster in game for an invite and to have a conversation</h5>
             </div>
-            </AboutUsContainer>
+            </ContactUsContainer>
         );
     }
 }
 
-export default AboutUs;
+export default ContactUs;

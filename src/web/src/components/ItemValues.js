@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
+import values from "../media/item_values.jpg"
 
-const AboutUsContainer = styled.div`
+
+const ItemValuesContainer = styled.div`
     width: 100%;
     height: 100vh;
     background-color: white;
@@ -12,16 +14,16 @@ const AboutUsContainer = styled.div`
     font-size: 5rem;
 `
 
-class AboutUs extends Component {
+class ItemValues extends Component {
     render() {
         return (
-            <AboutUsContainer>
+            <ItemValuesContainer>
             <div>
-                Welcome to About Us
+                <img src={values} alt="value spreadsheet"/>
             </div>
-            </AboutUsContainer>
+            </ItemValuesContainer>
         );
     }
 }
 
-export default AboutUs;
+export default ItemValues;

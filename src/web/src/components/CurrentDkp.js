@@ -1,27 +1,27 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
 
-const AboutUsContainer = styled.div`
+const CurrentDkpContainer = styled.div`
     width: 100%;
     height: 100vh;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-size: 5rem;
 `
 
-class AboutUs extends Component {
+class CurrentDkp extends Component {
     render() {
         return (
-            <AboutUsContainer>
+            <CurrentDkpContainer>
             <div>
-                Welcome to About Us
+                Welcome to Current DKP
             </div>
-            </AboutUsContainer>
+            </CurrentDkpContainer>
         );
     }
 }
 
-export default AboutUs;
+export default CurrentDkp;

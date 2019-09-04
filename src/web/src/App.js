@@ -4,6 +4,10 @@ import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 import ScrollableAnchor, { goToAnchor } from "react-scrollable-anchor";
 import AboutUs from './components/AboutUs';
+import OurHistory from './components/OurHistory';
+import ContactUs from './components/ContactUs';
+import CurrentDkp from './components/CurrentDkp';
+import ItemValues from './components/ItemValues';
 
 const Global = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=PT+Sans|Raleway');
@@ -55,11 +59,11 @@ function App() {
         <div className="left">
           <a href="#about">About Us</a>
           <a href="#history">Our History</a>
-          <a href="#loot">Loot Rules</a>
+          <a href="#contact">Contact Us</a>
         </div>
         <div className="right">
           <a href="#dkp">Current DKP</a>
-          <a href="#contact">Contact Us</a>
+          <a href="#value">Item Values</a>
         </div>
       </NavBarStyles>
       <header className="App-header">
@@ -70,6 +74,22 @@ function App() {
       
       <ScrollableAnchor id={"about"}>
       <AboutUs />
+      </ScrollableAnchor>
+
+      <ScrollableAnchor id={"history"}>
+      <OurHistory />
+      </ScrollableAnchor>
+
+      <ScrollableAnchor id={"contact"}>
+      <ContactUs />
+      </ScrollableAnchor>
+
+      <ScrollableAnchor id={"dkp"}>
+      <CurrentDkp />
+      </ScrollableAnchor>
+
+      <ScrollableAnchor id={"value"}>
+      <ItemValues />
       </ScrollableAnchor>
 
     </div>
