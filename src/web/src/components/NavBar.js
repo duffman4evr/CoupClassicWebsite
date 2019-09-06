@@ -45,7 +45,7 @@ class NavBar extends Component {
                         <a href="#contact">Contact Us</a>
                     </div>
                     <div className="right">
-                        <a href="#dkp">Current DKP</a>
+                        <a href="https://docs.google.com/spreadsheets/d/1QPzP9xd6_rnbZXht0RYR2lM5co1n8fCYLz_y5VfqH_c/edit?usp=sharing">Current DKP</a>
                         <a href="https://docs.google.com/spreadsheets/d/1j-WYZj_PZVQ6KXo3r-FiLrqwNbJHyvv2dWE2Hsipk3E/edit?usp=sharing">Item Values</a>
                     </div>
                 </NavBarStyles>

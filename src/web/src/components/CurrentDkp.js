@@ -16,9 +16,9 @@ class CurrentDkp extends Component {
     render() {
         return (
             <CurrentDkpContainer>
-            <div>
-                Welcome to Current DKP
-            </div>
+                <div>
+                    <h5>Current DKP Standings</h5>
+                </div>
             </CurrentDkpContainer>
         );
     }

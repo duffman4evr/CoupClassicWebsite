@@ -16,9 +16,9 @@ class AboutUs extends Component {
     render() {
         return (
             <AboutUsContainer>
-            <div>
-                Welcome to About Us
-            </div>
+                <div>
+                    About Us
+                </div>
             </AboutUsContainer>
         );
     }

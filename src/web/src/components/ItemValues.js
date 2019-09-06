@@ -18,9 +18,9 @@ class ItemValues extends Component {
     render() {
         return (
             <ItemValuesContainer>
-            <div>
-                <img src={values} alt="value spreadsheet"/>
-            </div>
+                <div>
+                    <img src={values} alt="value spreadsheet" />
+                </div>
             </ItemValuesContainer>
         );
     }

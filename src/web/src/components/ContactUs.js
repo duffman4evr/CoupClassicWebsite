@@ -9,17 +9,20 @@ const ContactUsContainer = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 5rem;
+    font-size: 3rem;
+    p {
+        font-size: 25px
+    }
 `
 
 class ContactUs extends Component {
     render() {
         return (
             <ContactUsContainer>
-            <div>
-                <h1>Contact Us</h1>
-                <h5>Please seek Evilmonster in game for an invite and to have a conversation</h5>
-            </div>
+                <div>
+                    <h1>Contact Us</h1>
+                    <p>Please seek Evilmonstar in game for an invite or to have a conversation</p>
+                </div>
             </ContactUsContainer>
         );
     }

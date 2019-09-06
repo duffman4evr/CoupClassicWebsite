@@ -16,9 +16,9 @@ class OurHistory extends Component {
     render() {
         return (
             <OurHistoryContainer>
-            <div>
-                Welcome to Our History
-            </div>
+                <div>
+                    Our History
+                </div>
             </OurHistoryContainer>
         );
     }
