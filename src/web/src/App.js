@@ -63,7 +63,7 @@ function App() {
         </div>
         <div className="right">
           <a href="#dkp">Current DKP</a>
-          <a href="#value">Item Values</a>
+          <a href="https://docs.google.com/spreadsheets/d/1j-WYZj_PZVQ6KXo3r-FiLrqwNbJHyvv2dWE2Hsipk3E/edit?usp=sharing">Item Values</a>
         </div>
       </NavBarStyles>
       <header className="App-header">
@@ -88,9 +88,10 @@ function App() {
       <CurrentDkp />
       </ScrollableAnchor>
 
-      <ScrollableAnchor id={"value"}>
+      {/* Saving for later */}
+      {/* <ScrollableAnchor id={"value"}>
       <ItemValues />
-      </ScrollableAnchor>
+      </ScrollableAnchor> */}
 
     </div>
   );
