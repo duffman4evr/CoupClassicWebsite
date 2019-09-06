@@ -3,11 +3,12 @@ import './App.css';
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 import ScrollableAnchor from "react-scrollable-anchor";
+import NavBar from './components/NavBar';
 import AboutUs from './components/AboutUs';
 import OurHistory from './components/OurHistory';
 import ContactUs from './components/ContactUs';
 import CurrentDkp from './components/CurrentDkp';
-import ItemValues from './components/ItemValues';
+// import ItemValues from './components/ItemValues';
 
 const Global = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=PT+Sans|Raleway');
@@ -18,54 +19,11 @@ const Global = createGlobalStyle`
   }
 `
 
-const NavBarStyles = styled.div`
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 6vh;
-  font-size: 2rem;
-  background-color: #1A090D;
-  font-family: "Raleway";
-  text-transform: uppercase;
-  z-index: 2;
-  a {
-    text-decoration: none;
-    padding-left: 2vw;
-    color: white;
-    &:hover {
-      color: #6B6570;
-    }
-  }
-  .left {
-    display: flex;
-    flex-direction: row;
-    width: 35vw;
-  }
-  .right {
-    margin-right: 2vw;
-    width: 30vw;
-    display: flex;
-    justify-content: space-around;
-  }
-`
-
 function App() {
   return (
     <div className="App">
       <Global />
-      <NavBarStyles>
-        <div className="left">
-          <a href="#about">About Us</a>
-          <a href="#history">Our History</a>
-          <a href="#contact">Contact Us</a>
-        </div>
-        <div className="right">
-          <a href="#dkp">Current DKP</a>
-          <a href="https://docs.google.com/spreadsheets/d/1j-WYZj_PZVQ6KXo3r-FiLrqwNbJHyvv2dWE2Hsipk3E/edit?usp=sharing">Item Values</a>
-        </div>
-      </NavBarStyles>
+      <NavBar />
       <header className="App-header">
         <img src={"https://media.giphy.com/media/3oAt21Fnr4i54uK8vK/giphy.gif"} alt="gif" />
         <h1>Welcome to Coup</h1>
