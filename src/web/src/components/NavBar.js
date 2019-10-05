@@ -28,7 +28,7 @@ const NavBarStyles = styled.div`
   }
   .right {
     margin-right: 2vw;
-    width: 30vw;
+    width: 40vw;
     display: flex;
     justify-content: space-around;
   }
@@ -41,10 +41,10 @@ class NavBar extends Component {
                 <NavBarStyles>
                     <div className="left">
                         <a href="#about">About Us</a>
-                        <a href="#history">Our History</a>
                         <a href="#contact">Contact Us</a>
                     </div>
                     <div className="right">
+                    <a href="https://docs.google.com/spreadsheets/d/1QPzP9xd6_rnbZXht0RYR2lM5co1n8fCYLz_y5VfqH_c/edit?usp=sharing">Recruitment</a>
                         <a href="https://docs.google.com/spreadsheets/d/1QPzP9xd6_rnbZXht0RYR2lM5co1n8fCYLz_y5VfqH_c/edit?usp=sharing">Current DKP</a>
                         <a href="https://docs.google.com/spreadsheets/d/1j-WYZj_PZVQ6KXo3r-FiLrqwNbJHyvv2dWE2Hsipk3E/edit?usp=sharing">Item Values</a>
                     </div>
