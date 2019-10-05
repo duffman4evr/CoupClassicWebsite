@@ -10,6 +10,10 @@ const AboutUsContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    a {
+        text-decoration: none;
+        color: blue;
+    }
     .aboutContent {
         font-size: 1rem;
         width: 90%;
@@ -47,7 +51,7 @@ class AboutUs extends Component {
                     <h2>
                         Raid Schedule
                 </h2>
-                <a href="https://docs.google.com/document/d/15lVooHsIOXBQuzqXziKTkXuYDUxk-NLBH0kYn2DHIP8/edit" target="_blank">Click for detailed schedule document</a>
+                    Click <a href="https://docs.google.com/document/d/15lVooHsIOXBQuzqXziKTkXuYDUxk-NLBH0kYn2DHIP8/edit" target="_blank">here</a> for detailed schedule document
                     <p>
                         Friday: 7-10 PST
                     <br />
@@ -55,32 +59,32 @@ class AboutUs extends Component {
                     <br />
                         We occasionally run over if close to a kill or completion
                 </p>
-                <div className="lookingFor">
-                    <h2>What we are looking for</h2>
-                    <p>
-                        We started out wanting to build a community first and raid team later, and we’ve been highly successful so far. Now we are looking to round out our raid team with a few more like-minded adults who want to enjoy the game with us and contribute to a fun, supportive environment.
-                        For our raiders, we are looking for those who respect other’s time and are willing to put forth the effort required to help us maximize the time we have with our relaxed schedule.
-                        Additionally, individuals who are willing to accept (and at times provide) constructive feedback to help the guild improve.
-                        Players with integrity. Reputation is incredibly important to us, and we want our members to embody our values and represent the guild well at all times.
-
+                    <div className="lookingFor">
+                        <h2>What we are looking for</h2>
+                        <p>
+                            We started out wanting to build a community first and raid team later, and we’ve been highly successful so far. Now we are looking to round out our raid team with a few more like-minded adults who want to enjoy the game with us and contribute to a fun, supportive environment.
+                            For our raiders, we are looking for those who respect other’s time and are willing to put forth the effort required to help us maximize the time we have with our relaxed schedule.
+                            Additionally, individuals who are willing to accept (and at times provide) constructive feedback to help the guild improve.
+                            Players with integrity. Reputation is incredibly important to us, and we want our members to embody our values and represent the guild well at all times.
+    
                         <h2>What are aren’t looking for:</h2>
 
-                        Overly toxic, racist, or homophobic behavior. We are all nerds and like to joke around with each other, but we never approve of alienating or exclusive behavior. During the Blizzcon opening ceremony Chris Metzen always used to end with a saying; “Be good to each other”… We intend to do just that, and invite people that will conduct themselves in a generally positive manner.
-                        Individuals looking to advance their own personal objectives over the objectives of the larger group. If you are overly focused on getting loot, pushing bleeding edge progression, or aren’t willing to integrate with and contribute to the guild community, this might not be the best environment for you.
-                        FAQ:
-
-                        What loot system will Coup use?
-                        We will be using DKP with fixed item costs and weekly decay to start with. Ultimately our objectives are to reward effort and participation and encourage people to take upgrades when they are available. Hoarding is not something we want to support.
-                        Legendaries are the exception and they will be awarded through a council of class leaders.
-                        Will Coup require full consumables and world buffs for raiding?
-                        Initially, no. When pushing progression we may enact guidelines around consumable usage, but flasks and world buffs are not required for content in phases 1-3.
-                        While we won’t tell you that you can’t stack world buffs, we won’t force the raid to do it either, in general. On that same coin, we also won’t tolerate social pressure or toxic behavior around this. If you take the time to gather world buffs that is totally your choice, but you shouldn’t fly off the handle at the raid if something happens and you happen to die early and lose them.
-                        What classes are you currently recruiting?
-                        We are currently looking for exceptional applicants in the following classes:
-                        Warrior (DPS)
-                        Druid (Feral DPS and Resto)
-                        Hunter
-                        Other exceptional applicants feel free to apply
+                            Overly toxic, racist, or homophobic behavior. We are all nerds and like to joke around with each other, but we never approve of alienating or exclusive behavior. During the Blizzcon opening ceremony Chris Metzen always used to end with a saying; “Be good to each other”… We intend to do just that, and invite people that will conduct themselves in a generally positive manner.
+                            Individuals looking to advance their own personal objectives over the objectives of the larger group. If you are overly focused on getting loot, pushing bleeding edge progression, or aren’t willing to integrate with and contribute to the guild community, this might not be the best environment for you.
+                            FAQ:
+    
+                            What loot system will Coup use?
+                            We will be using DKP with fixed item costs and weekly decay to start with. Ultimately our objectives are to reward effort and participation and encourage people to take upgrades when they are available. Hoarding is not something we want to support.
+                            Legendaries are the exception and they will be awarded through a council of class leaders.
+                            Will Coup require full consumables and world buffs for raiding?
+                            Initially, no. When pushing progression we may enact guidelines around consumable usage, but flasks and world buffs are not required for content in phases 1-3.
+                            While we won’t tell you that you can’t stack world buffs, we won’t force the raid to do it either, in general. On that same coin, we also won’t tolerate social pressure or toxic behavior around this. If you take the time to gather world buffs that is totally your choice, but you shouldn’t fly off the handle at the raid if something happens and you happen to die early and lose them.
+                            What classes are you currently recruiting?
+                            We are currently looking for exceptional applicants in the following classes:
+                            Warrior (DPS)
+                            Druid (Feral DPS and Resto)
+                            Hunter
+                            Other exceptional applicants feel free to apply
                     </p>
                     </div>
                 </div>
