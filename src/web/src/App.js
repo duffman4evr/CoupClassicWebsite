@@ -7,10 +7,12 @@ import HomePage from './components/HomePage';
 
 const Global = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=PT+Sans|Raleway');
-  body {
+  * {
     margin: 0;
     padding: 0;
-    font-family: 'PT Sans';
+    body {
+      font-family: 'PT Sans';
+    }
   }
 `
 

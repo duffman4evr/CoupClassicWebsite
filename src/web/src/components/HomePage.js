@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import AboutUs from './AboutUs';
 import ContactUs from './ContactUs';
 import stormwind from '../media/stormwind.jpg'
+import Recruitment from './Recruitment';
 // This page will integrate with the app (hopefully) and be locked behind OAuth
 // import CurrentDkp from './CurrentDkp'
 import ScrollableAnchor from "react-scrollable-anchor";
@@ -19,10 +20,15 @@ class HomePage extends Component {
                 <ScrollableAnchor id={"about"}>
                     <AboutUs />
                 </ScrollableAnchor>
+                
+                <ScrollableAnchor id={"recruitment"}>
+                    <Recruitment />
+                </ScrollableAnchor>
 
                 <ScrollableAnchor id={"contact"}>
                     <ContactUs />
                 </ScrollableAnchor>
+
 
                 {/* This page will integrate with the app (hopefully) and be locked behind OAuth
                 <ScrollableAnchor id={"dkp"}>
