@@ -83,18 +83,18 @@ class Recruitment extends Component {
                 <RecruitmentIcons>
                 <h1>High</h1><br/>
                 <RecruitmentSection>
-                <div style={{ backgroundImage: `url(${druid})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Druid</div>
                 <div style={{ backgroundImage: `url(${paladin})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Paladin</div>
                 </RecruitmentSection>
                 <h1>Low</h1>
                 <RecruitmentSection>
+                <div style={{ backgroundImage: `url(${druid})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Druid</div>
                 <div style={{ backgroundImage: `url(${warrior})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box">Warrior</div>
-                <div style={{ backgroundImage: `url(${warlock})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Warlock</div>
-                <div style={{ backgroundImage: `url(${hunter})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Hunter</div>
 
                 </RecruitmentSection>
                 <h1>Closed</h1>
                 <RecruitmentSection>
+                <div style={{ backgroundImage: `url(${hunter})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Hunter</div>
+                <div style={{ backgroundImage: `url(${warlock})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Warlock</div>
                 <div style={{ backgroundImage: `url(${mage})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Mage</div>
                 <div style={{ backgroundImage: `url(${rogue})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Rogue</div>
                 <div style={{ backgroundImage: `url(${priest})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Priest</div>

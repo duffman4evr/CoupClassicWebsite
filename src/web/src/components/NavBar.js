@@ -28,7 +28,7 @@ const NavBarStyles = styled.div`
   }
   .right {
     margin-right: 2vw;
-    width: 40vw;
+    width: 30vw;
     display: flex;
     justify-content: space-around;
   }
