@@ -28,6 +28,51 @@ const AboutUsContainer = styled.div`
     p {
         margin: 2vh 0 2vh 0;
     }
+    @media screen and (min-width: 350px) {
+        height: 120vh;
+        .aboutContent {
+            font-size: 8px;
+            h1 {
+                font-size: 18px;
+                margin-top: 0vh;
+            }
+        }
+      }
+      @media screen and (min-height: 810px) {
+        height: 105vh;
+        .aboutContent {
+            h1 {
+                margin-top: 2vh;
+            }
+        }
+      }
+      @media screen and (min-width: 410px) {
+        height: 115vh;
+        .aboutContent {
+            h1 {
+                margin-top: 2vh;
+            }
+        }
+      }
+      @media screen and (min-width: 750px) {
+        .aboutContent {
+            font-size: 12px; 
+            h1 {
+                font-size: 22px;
+                margin-top: 2vh;
+            }
+        }
+      }
+      @media screen and (min-width: 1020px) {
+        height: 105vh;
+        .aboutContent {
+            font-size: 15px; 
+            h1 {
+                font-size: 27px;
+                margin-top: 2vh;
+            }
+        }
+      }
 `
 
 class AboutUs extends Component {
