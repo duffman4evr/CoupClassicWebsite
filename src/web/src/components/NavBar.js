@@ -25,12 +25,36 @@ const NavBarStyles = styled.div`
     display: flex;
     flex-direction: row;
     width: 35vw;
+    @media screen and (min-width: 350px) {
+      font-size: 8px;
+      width: 40vw;
+    }
+    @media screen and (min-width: 750px) {
+      font-size: 15px; 
+      width: 45vw;
+    }
+    @media screen and (min-width: 1020px) {
+      font-size: 20px; 
+      width: 45vw;
+    }
   }
   .right {
     margin-right: 2vw;
     width: 30vw;
     display: flex;
     justify-content: space-around;
+    @media screen and (min-width: 350px) {
+      font-size: 9px; 
+      width: 55vw;
+    }
+    @media screen and (min-width: 750px) {
+      font-size: 15px; 
+      width: 45vw;
+    }
+    @media screen and (min-width: 1020px) {
+      font-size: 20px; 
+      width: 45vw;
+    }
   }
 `
 
