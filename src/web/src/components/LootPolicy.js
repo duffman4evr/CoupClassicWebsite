@@ -99,6 +99,9 @@ class LootPolicy extends Component {
                     <p>
                         Raiders earn DKP by attending raids, being on time, and generally contributing to the guild. See the FAQ below for a complete list of all the ways a raider can attain DKP. DKP earnings from guild bank contributions are capped each week.
                 </p>
+                <p>
+                     Raiders that are online 15 minutes before raid start but don't make it into the raid are placed on the standby list. They earn DKP for boss kills just the same as raider that's in the instance.
+                </p>
                     <p>
                         When an item drops within a raid, raiders that can equip the item are allowed to bid on it. Again, the item prices are fixed, so “bidding” really means that a raider is declaring their intent to buy that item for its fixed price. In order to place a bid, the raider will send a ‘!bid’ tell to the current raid’s loot officer. After all bids have been collected, the bidder with the highest DKP total will be awarded the item, and will immediately pay for the item in DKP. If there is a tie, the tied players will /roll. If the winning bidder doesn’t have enough DKP to pay for the item, they will go into the negative.
                 </p>
@@ -125,13 +128,16 @@ class LootPolicy extends Component {
                     <LootPolicyParagraph>
                         <ul>
                             <ListItem>
-                                Participate in a boss kill: 5 DKP
+                                Participate in a boss kill in the raid: 5 DKP
                     </ListItem>
                             <ListItem>
-                                Be online 15 minutes before raid start: 5 DKP (regardless of whether you are invited to the actual raid). On top of the 5 DKP award, if you don’t end up getting an invite, you'll get an additonal 10 DKP
+                                Be on the standby list during a boss kill: 5 DKP
                     </ListItem>
                             <ListItem>
-                                Be present at the end of the raid: 5 DKP
+                                Be online 15 minutes before raid start (regardless of whether you end up in the raid or on standby): 5 DKP
+                    </ListItem>
+                            <ListItem>
+                                Be present at the end of the raid (again, regardless of whether you are in the raid or on standby): 5 DKP
                     </ListItem>
                             <ListItem>
                                 Contribute to the guild bank: Officer discretion, but capped at 5 DKP weekly
@@ -166,7 +172,7 @@ class LootPolicy extends Component {
                         <b style={{color: "green"}}>I disagree with some of the item pricing, who should I talk to?</b>
                     </LootPolicyParagraph>
                     <LootPolicyParagraph>
-                        Please talk to Evilmonstar about item pricing.
+                        Please talk to Switch or Evilmonstar about item pricing. We encourage raiders to take incremental upgrades on their way to BIS, because incremental upgrades help raid progression. As such, the pricing reflects this mindset. However, pricing may not exactly match the current 'stats-are-nearly-worthless' BIS meta, because we don't buy into that meta fully.  For example, we don't want raiders passing up large stat upgrades because they'd miss out on a little bit of spellpower. Your DPS is 0 if you are dead.
                 </LootPolicyParagraph>
 
                     <LootPolicyParagraph>
