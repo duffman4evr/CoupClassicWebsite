@@ -7,23 +7,11 @@ import ScrollableAnchor from "react-scrollable-anchor";
 import styled from "styled-components";
 
 const ImageContainer = styled.div`
-@media screen and (max-width: 1025px) {
+@media screen and (min-width: 350px) {
     img {
     width: 100%;
     }
 }    
-// @media screen and (max-width: 820px) {
-//         img {
-//         width: 100%;
-//         margin-right: 15vw;
-//         }
-//     }
-//     @media screen and (max-width: 670px) {
-//         img {
-//         width: 100%;
-//         margin-right: 0vw;
-//         }
-//     }
 `
 
 class HomePage extends Component {
