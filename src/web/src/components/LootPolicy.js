@@ -247,7 +247,7 @@ class LootPolicy extends Component {
                 </LootPolicyParagraph>
 
                     <LootPolicyParagraph>
-                        <b style={{color: "green"}}>Why do we reset DKP between raid tiers?</b>
+                        <b style={{color: "green"}}>Can non-raiders earn DKP?</b>
                     </LootPolicyParagraph>
                     <LootPolicyParagraph>
                         Generally, only raiders will earn DKP, since they will the the ones invited to raids. Non-raiders are not present in the DKP system, and can’t earn DKP by making contributions to the guild bank. This is because a non-raider won’t generally have a secure raid spot, and we don’t want them to watch their DKP decay helplessly after making a contribution into the bank.
