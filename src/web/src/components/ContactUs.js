@@ -20,6 +20,27 @@ const ContactUsContainer = styled.div`
     h6 {
         margin: 0;
     }
+    @media screen and (min-width: 350px) {
+        h1, h6, a {
+            font-size: 10px;
+            margin-top: 0vh;
+        }
+        p {
+            font-size: 8px;
+        }
+      }
+      @media screen and (min-height: 810px) {
+
+      }
+      @media screen and (min-width: 410px) {
+
+      }
+      @media screen and (min-width: 750px) {
+
+      }
+      @media screen and (min-width: 1020px) {
+
+      }
 `
 
 class ContactUs extends Component {
@@ -27,10 +48,10 @@ class ContactUs extends Component {
         return (
             <ContactUsContainer>
                 <div>
-                    Contact us in game:
+                    <h1>Contact us in game:</h1>
                     <p>For any questions or concerns, whisper Evilmonstar, Helt, Hooligan, Nae, Dotdotdot, or Switch in game.</p>
                     <br/><br/>
-                    Or chat with us in our <a href="https://discord.gg/TVcKDtJ" target="_blank" rel="noopener noreferrer">Discord</a> server
+                    <h1>Or chat with us in our <a href="https://discord.gg/TVcKDtJ" target="_blank" rel="noopener noreferrer">Discord</a> server</h1>
 
                     <br/><br/>
                     <h6>Or PM Us:</h6>

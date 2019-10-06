@@ -32,7 +32,24 @@ const RecruitmentContainer = styled.div`
             font-size: 2rem;
         }
     }
-    
+    @media screen and (min-width: 350px) {
+        height: 60vh;
+        .recruitContent {
+            h3, h1, p {
+                font-size: 12px;
+                margin-top: 2vh;
+            }
+        }
+    }
+    @media screen and (min-width: 1020px) {
+        height: 50vh;
+        .recruitContent {
+            h3, h1, p {
+                font-size: 16px;
+                margin-top: 2vh;
+            }
+        }
+    }
 `
 
 const RecruitmentIcons = styled.div`
@@ -46,19 +63,27 @@ display: flex;
         border: 1px solid white;
         margin: 2vw;
         padding: 2vw;
+        
     }
     h1 {
         margin-top: 2vh;
     }
-    .high {
-        background-color: green;
+    @media screen and (min-width: 350px) {
+        .box {
+            width: 10vw;
+            height: 4vh;
+            padding: 2vw;
+            margin: 2vw;
+            font-size: 12px;
+        }
     }
-    .low {
-        background-color: yellow;
-        color: black;
-    }
-    .closed {
-        background-color: red;
+    @media screen and (min-width: 1020px) {
+        .box {
+            width: 8vw;
+            height: 2vh;
+            margin: 2vw;
+            font-size: 12px;
+        }
     }
 `
 
@@ -69,7 +94,10 @@ flex-direction: row;
 width: 50%;
 align-items: center;
 justify-content: space-evenly;
-
+    @media screen and (min-width: 350px) {
+        padding: 0vw;
+        margin: 0vw;
+}
 `
 
 class Recruitment extends Component {
@@ -77,33 +105,33 @@ class Recruitment extends Component {
         return (
             <RecruitmentContainer>
                 <div className="recruitContent">
-                <h3>Current Recruitment Needs:
+                    <h3>Current Recruitment Needs:
                 </h3>
 
-                <RecruitmentIcons>
-                <h1>High</h1><br/>
-                <RecruitmentSection>
-                <div style={{ backgroundImage: `url(${paladin})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Paladin</div>
-                </RecruitmentSection>
-                <h1>Low</h1>
-                <RecruitmentSection>
-                <div style={{ backgroundImage: `url(${druid})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Druid</div>
-                <div style={{ backgroundImage: `url(${warrior})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box">Warrior</div>
+                    <RecruitmentIcons>
+                        <h1>High</h1><br />
+                        <RecruitmentSection>
+                            <div style={{ backgroundImage: `url(${paladin})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Paladin</div>
+                        </RecruitmentSection>
+                        <h1>Low</h1>
+                        <RecruitmentSection>
+                            <div style={{ backgroundImage: `url(${druid})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Druid</div>
+                            <div style={{ backgroundImage: `url(${warrior})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box">Warrior</div>
 
-                </RecruitmentSection>
-                <h1>Closed</h1>
-                <RecruitmentSection>
-                <div style={{ backgroundImage: `url(${hunter})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Hunter</div>
-                <div style={{ backgroundImage: `url(${warlock})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Warlock</div>
-                <div style={{ backgroundImage: `url(${mage})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Mage</div>
-                <div style={{ backgroundImage: `url(${rogue})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Rogue</div>
-                <div style={{ backgroundImage: `url(${priest})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Priest</div>
-                    
-                </RecruitmentSection>
-                </RecruitmentIcons>
+                        </RecruitmentSection>
+                        <h1>Closed</h1>
+                        <RecruitmentSection>
+                            <div style={{ backgroundImage: `url(${hunter})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Hunter</div>
+                            <div style={{ backgroundImage: `url(${warlock})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Warlock</div>
+                            <div style={{ backgroundImage: `url(${mage})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Mage</div>
+                            <div style={{ backgroundImage: `url(${rogue})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Rogue</div>
+                            <div style={{ backgroundImage: `url(${priest})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="box ">Priest</div>
 
-                <p>For more details on our recruitment process click <a href="https://docs.google.com/document/d/1fyi17yMVqoKDlBcIsfhcvyWeAQJbnvhCO0x3MTtrrvo/edit" target="_blank" rel="noopener noreferrer">here</a>
-                </p>
+                        </RecruitmentSection>
+                    </RecruitmentIcons>
+
+                    <p>For more details on our recruitment process click <a href="https://docs.google.com/document/d/1fyi17yMVqoKDlBcIsfhcvyWeAQJbnvhCO0x3MTtrrvo/edit" target="_blank" rel="noopener noreferrer">here</a>
+                    </p>
                 </div>
             </RecruitmentContainer>
         );
