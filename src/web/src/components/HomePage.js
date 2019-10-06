@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AboutUs from './AboutUs';
 import ContactUs from './ContactUs';
-import stormwind from '../media/stormwind.jpg'
+import ragnaros from '../media/ragnaros2019.jpg'
 import Recruitment from './Recruitment';
 // This page will integrate with the app (hopefully) and be locked behind OAuth
 // import CurrentDkp from './CurrentDkp'
@@ -12,9 +12,7 @@ class HomePage extends Component {
         return (
             <div>
                 <header className="App-header">
-                    <img src={stormwind} alt="gif" />
-                    <h1>Welcome to Coup</h1>
-                    <p>An alliance guild on Atiesh</p>
+                    <img src={ragnaros} alt="gif" />
                 </header>
 
                 <ScrollableAnchor id={"about"}>
