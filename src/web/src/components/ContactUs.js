@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const ContactUsContainer = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     background-color: white;
     color: black;
     display: flex;
@@ -11,7 +11,11 @@ const ContactUsContainer = styled.div`
     align-items: center;
     font-size: 3rem;
     p {
-        font-size: 25px
+        font-size: 25px;
+        margin: 2vh 0;
+    }
+    h1, h6 {
+        font-size: 35px;
     }
     a {
         text-decoration: none;
@@ -20,42 +24,45 @@ const ContactUsContainer = styled.div`
     h6 {
         margin: 0;
     }
-    @media screen and (min-width: 350px) {
-        h1, h6, a {
-            font-size: 10px;
-            margin-top: 0vh;
+    @media screen and (max-width: 420px) {
+        height: 40vh;
+        .contentBox {
+            height: 30vh;
+            justify-content: none;
+        }
+        h1, h6 {
+            font-size: 12px;
+            padding: 0;
+            margin: 0;
         }
         p {
-            font-size: 8px;
+            font-size: 10px;
+            margin: 2vh 5vw 2vh 5vw;
         }
-      }
-      @media screen and (min-height: 810px) {
-
-      }
-      @media screen and (min-width: 410px) {
-
-      }
-      @media screen and (min-width: 750px) {
-
-      }
-      @media screen and (min-width: 1020px) {
-
-      }
+    }
+    @media screen and (max-width: 770px) {
+        height: 60vh;
+        p {
+            margin: 2vh 5vh;
+        }
+    }
+    @media screen and (max-width: 1030px) {
+        height: 50vh;
+        p {
+            margin: 2vh 5vh;
+        }
+    }
 `
 
 class ContactUs extends Component {
     render() {
         return (
             <ContactUsContainer>
-                <div>
+                <div className="contentBox">
                     <h1>Contact us in game:</h1>
                     <p>For any questions or concerns, whisper Evilmonstar, Helt, Hooligan, Nae, Dotdotdot, or Switch in game.</p>
-                    <br/><br/>
                     <h1>Or chat with us in our <a href="https://discord.gg/TVcKDtJ" target="_blank" rel="noopener noreferrer">Discord</a> server</h1>
-
-                    <br/><br/>
                     <h6>Or PM Us:</h6>
-                    <div className="discordHandles">
                         <p>Evilmonstar - Evilmonstar#7541
                         <br />
                         Helt - kennega#3578
@@ -68,7 +75,6 @@ class ContactUs extends Component {
                         <br />
                         Switch - Switch#6366
                         </p>
-                    </div>
                 </div>
             </ContactUsContainer>
         );

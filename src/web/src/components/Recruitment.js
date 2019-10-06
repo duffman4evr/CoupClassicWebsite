@@ -32,20 +32,11 @@ const RecruitmentContainer = styled.div`
             font-size: 2rem;
         }
     }
-    @media screen and (min-width: 350px) {
+    @media screen and (max-width: 420px) {
         height: 60vh;
         .recruitContent {
             h3, h1, p {
                 font-size: 12px;
-                margin-top: 2vh;
-            }
-        }
-    }
-    @media screen and (min-width: 1020px) {
-        height: 50vh;
-        .recruitContent {
-            h3, h1, p {
-                font-size: 16px;
                 margin-top: 2vh;
             }
         }
@@ -68,19 +59,11 @@ display: flex;
     h1 {
         margin-top: 2vh;
     }
-    @media screen and (min-width: 350px) {
+    @media screen and (max-width: 420px) {
         .box {
             width: 10vw;
             height: 4vh;
             padding: 2vw;
-            margin: 2vw;
-            font-size: 12px;
-        }
-    }
-    @media screen and (min-width: 1020px) {
-        .box {
-            width: 8vw;
-            height: 2vh;
             margin: 2vw;
             font-size: 12px;
         }
@@ -94,7 +77,7 @@ flex-direction: row;
 width: 50%;
 align-items: center;
 justify-content: space-evenly;
-    @media screen and (min-width: 350px) {
+    @media screen and (max-width: 420px) {
         padding: 0vw;
         margin: 0vw;
 }
