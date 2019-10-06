@@ -20,8 +20,8 @@ const Global = createGlobalStyle`
 function App() {
   return (
     <Router>
-      <div className="App">
         <Global />
+      <div className="App">
         <NavBar />
         <Switch>
           <Route path="/" component={HomePage} />
