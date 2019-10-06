@@ -6,6 +6,9 @@ import io.dropwizard.Application;
 import io.dropwizard.assets.AssetsBundle;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+import org.tuckey.web.filters.urlrewrite.UrlRewriteFilter;
+
+import javax.servlet.FilterRegistration;
 
 public class CoupClassicWebsiteApplication extends Application<CoupClassicWebsiteConfiguration> {
 
@@ -26,6 +29,14 @@ public class CoupClassicWebsiteApplication extends Application<CoupClassicWebsit
     @Override
     public void run(final CoupClassicWebsiteConfiguration configuration,
                     final Environment environment) {
+
+        // Needed so that dropwizard works with react-router:
+        // https://stackoverflow.com/questions/45560374/configuration-changes-in-dropwizard-application-to-work-with-react-browserhistor
+        final FilterRegistration.Dynamic registration = environment
+                .servlets()
+                .addFilter("UrlRewriteFilter", new UrlRewriteFilter());
+        registration.addMappingForUrlPatterns(null, true, "/*");
+        registration.setInitParameter("confPath", "resources/urlrewrite.xml");
 
         environment.jersey().setUrlPattern("/api/*");
 

@@ -50,6 +50,11 @@
             <artifactId>dropwizard-assets</artifactId>
             <version>${dropwizard.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.tuckey</groupId>
+            <artifactId>urlrewritefilter</artifactId>
+            <version>4.0.3</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -57,6 +62,10 @@
             <resource>
                 <directory>src/web/build</directory>
                 <targetPath>web/assets</targetPath>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <targetPath>resources</targetPath>
             </resource>
         </resources>
         <plugins>

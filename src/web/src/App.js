@@ -4,6 +4,7 @@ import './App.css';
 import { createGlobalStyle } from "styled-components";
 import NavBar from './components/NavBar';
 import HomePage from './components/HomePage';
+import LootPolicy from './components/LootPolicy';
 
 const Global = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=PT+Sans|Raleway');
