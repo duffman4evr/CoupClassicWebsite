@@ -30,7 +30,7 @@ class ContactUs extends Component {
                     Contact us in game:
                     <p>For any questions or concerns, whisper Evilmonstar, Helt, Hooligan, Nae, Dotdotdot, or Switch in game.</p>
                     <br/><br/>
-                    Or chat with us in our <a href="https://discord.gg/TVcKDtJ" target="_blank">Discord</a> server
+                    Or chat with us in our <a href="https://discord.gg/TVcKDtJ" target="_blank" rel="noopener noreferrer">Discord</a> server
 
                     <br/><br/>
                     <h6>Or PM Us:</h6>

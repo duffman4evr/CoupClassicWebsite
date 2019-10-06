@@ -102,7 +102,7 @@ class Recruitment extends Component {
                 </RecruitmentSection>
                 </RecruitmentIcons>
 
-                <p>For more details on our recruitment process click <a href="https://docs.google.com/document/d/1fyi17yMVqoKDlBcIsfhcvyWeAQJbnvhCO0x3MTtrrvo/edit" target="_blank">here</a>
+                <p>For more details on our recruitment process click <a href="https://docs.google.com/document/d/1fyi17yMVqoKDlBcIsfhcvyWeAQJbnvhCO0x3MTtrrvo/edit" target="_blank" rel="noopener noreferrer">here</a>
                 </p>
                 </div>
             </RecruitmentContainer>

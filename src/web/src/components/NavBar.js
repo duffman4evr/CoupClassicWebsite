@@ -47,7 +47,7 @@ class NavBar extends Component {
                     <div className="right">
                         <a href="#recruitment">Recruitment</a>
                         <a href="/loot-policy">Loot Policy</a>
-                        <a href="https://docs.google.com/spreadsheets/d/1j-WYZj_PZVQ6KXo3r-FiLrqwNbJHyvv2dWE2Hsipk3E/edit?usp=sharing" target="_blank">Item Prices</a>
+                        <a href="https://docs.google.com/spreadsheets/d/1j-WYZj_PZVQ6KXo3r-FiLrqwNbJHyvv2dWE2Hsipk3E/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Item Prices</a>
                     </div>
                 </NavBarStyles>
             </div>

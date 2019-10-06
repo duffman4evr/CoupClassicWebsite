@@ -94,7 +94,7 @@ class LootPolicy extends Component {
 
                     <h5>DKP System Overview</h5>
                     <p>
-                        Coup Classic’s DKP system has fixed prices for each piece of loot. To see the prices, visit the pricing <a href="https://docs.google.com/spreadsheets/d/1j-WYZj_PZVQ6KXo3r-FiLrqwNbJHyvv2dWE2Hsipk3E/edit#gid=0" target="_blank">spreadsheet</a>. The prices are set by the officers of the guild, based on their knowledge of how powerful the items are. Better items cost more.
+                        Coup Classic’s DKP system has fixed prices for each piece of loot. To see the prices, visit the pricing <a href="https://docs.google.com/spreadsheets/d/1j-WYZj_PZVQ6KXo3r-FiLrqwNbJHyvv2dWE2Hsipk3E/edit#gid=0" target="_blank" rel="noopener noreferrer">spreadsheet</a>. The prices are set by the officers of the guild, based on their knowledge of how powerful the items are. Better items cost more.
                 </p>
                     <p>
                         Raiders earn DKP by attending raids, being on time, and generally contributing to the guild. See the FAQ below for a complete list of all the ways a raider can attain DKP. DKP earnings from guild bank contributions are capped each week.

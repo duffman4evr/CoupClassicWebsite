@@ -57,7 +57,7 @@ class AboutUs extends Component {
                     <h2>
                         Raid Schedule
                 </h2>
-                    <h3>Click <a href="https://docs.google.com/document/d/15lVooHsIOXBQuzqXziKTkXuYDUxk-NLBH0kYn2DHIP8/edit" target="_blank">here</a> for detailed schedule document</h3>
+                    <h3>Click <a href="https://docs.google.com/document/d/15lVooHsIOXBQuzqXziKTkXuYDUxk-NLBH0kYn2DHIP8/edit" target="_blank" rel="noopener noreferrer">here</a> for detailed schedule document</h3>
                     <p>
                         Friday: 7-10 PST
                     <br />
@@ -86,17 +86,3 @@ class AboutUs extends Component {
 }
 
 export default AboutUs;
-
-
-
-{/* <h2>
-Recruitment Needs and Process
-</h2>
-<a href="https://docs.google.com/document/d/15lVooHsIOXBQuzqXziKTkXuYDUxk-NLBH0kYn2DHIP8/edit" target="_blank">Click for detailed schedule document</a>
-<p>
-Friday: 7-10 PST
-<br />
-Saturday: 7-10 PST
-<br />
-We occasionally run over if close to a kill or completion
-</p> */}
