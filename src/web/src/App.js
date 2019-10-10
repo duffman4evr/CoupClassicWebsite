@@ -25,8 +25,8 @@ function App() {
   return (
     <Router>
       <Global />
+      <NavBar />
       <div className="App">
-        <NavBar />
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/about" component={AboutUs} />
