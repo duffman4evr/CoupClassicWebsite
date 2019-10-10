@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, Message } from 'semantic-ui-react';
+import { Image } from 'semantic-ui-react';
 import Azeroth from '../media/map.jpg';
 
 export default class PageNotFound extends Component {
