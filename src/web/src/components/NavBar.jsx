@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Menu } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 export default class NavBar extends Component {
   state = {};
@@ -12,6 +13,7 @@ export default class NavBar extends Component {
 
     return (
       <Menu inverted size={'massive'} fixed={'top'}>
+        <Logo />
         <Menu
           inverted
           fixed={'top'}
