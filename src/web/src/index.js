@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, BrowserRouter as Router } from 'react-router-dom'
+import { Route, BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import LootPolicy from './components/LootPolicy'
+import LootPolicy from './components/LootPolicy';
+import { createStore } from 'redux';
 import * as serviceWorker from './serviceWorker';
+import 'semantic-ui-css/semantic.min.css';
 
 const routing = (
   <Router>
@@ -13,7 +15,7 @@ const routing = (
       <Route path="/loot-policy" component={LootPolicy} />
     </div>
   </Router>
-)
+);
 
 ReactDOM.render(routing, document.getElementById('root'));
 
