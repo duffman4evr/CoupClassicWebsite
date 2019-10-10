@@ -1,28 +1,16 @@
 import React, { Component } from 'react';
+import { Image } from 'semantic-ui-react';
 import AboutUs from './AboutUs';
 import ContactUs from './ContactUs';
-import ragnaros from '../media/ragnaros2019.jpg';
+import ragnaros from '../media/ragnaros.jpg';
 import Recruitment from './Recruitment';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import styled from 'styled-components';
-
-const ImageContainer = styled.div`
-  @media screen and (min-width: 350px) {
-    img {
-      width: 100%;
-    }
-  }
-`;
 
 class HomePage extends Component {
   render() {
     return (
       <div>
-        <ImageContainer>
-          {/* <header className="App-header"> */}
-          <img src={ragnaros} alt="ragnaros" />
-          {/* </header> */}
-        </ImageContainer>
+        <Image src={ragnaros} centered fluid />
 
         <ScrollableAnchor id={'about'}>
           <AboutUs />
