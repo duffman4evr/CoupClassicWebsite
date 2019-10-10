@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
-import { createGlobalStyle } from "styled-components";
-import NavBar from './components/NavBar';
+import { createGlobalStyle } from 'styled-components';
+import GridContainer from './containers/Grid';
 import HomePage from './components/HomePage';
 
 const Global = createGlobalStyle`
@@ -14,14 +14,14 @@ const Global = createGlobalStyle`
       font-family: 'PT Sans';
     }
   }
-`
+`;
 
 function App() {
   return (
     <Router>
-        <Global />
+      <Global />
       <div className="App">
-        <NavBar />
+        <GridContainer />
         <Switch>
           <Route path="/" component={HomePage} />
         </Switch>

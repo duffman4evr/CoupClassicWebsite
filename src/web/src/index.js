@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
+import 'semantic-ui-css/semantic.min.css';
 import './index.css';
 import App from './App';
 import LootPolicy from './components/LootPolicy';
 import { createStore } from 'redux';
 import * as serviceWorker from './serviceWorker';
-import 'semantic-ui-css/semantic.min.css';
 
 const routing = (
   <Router>
