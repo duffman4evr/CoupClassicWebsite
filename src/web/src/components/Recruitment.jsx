@@ -27,7 +27,7 @@ const totalClasses =
 const displayClasses = obj => (
   <Grid columns={totalClasses}>
     {Object.entries(obj).map(([key, value]) => (
-      <Grid.Column>
+      <Grid.Column key={key}>
         <Popup content={key} trigger={<Image src={value} />} />
       </Grid.Column>
     ))}
@@ -43,7 +43,7 @@ const Recruitment = () => (
   >
     <Header as='h1'>Current Recruitment Needs</Header>
     <Divider />
-    <Container text style={{ 'padding-bottom': '50px' }}>
+    <Container text style={{ paddingBottom: '50px' }}>
       <Header as='h2'>High</Header>
       <Divider />
       {displayClasses(high)}

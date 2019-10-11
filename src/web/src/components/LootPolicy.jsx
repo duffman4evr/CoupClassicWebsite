@@ -14,7 +14,7 @@ const LootPolicy = () => (
   >
     <Header as='h1'>Loot Policy</Header>
     <Divider />
-    <Container text textAlign='left' style={{ 'padding-bottom': '50px' }}>
+    <Container text textAlign='left' style={{ paddingBottom: '50px' }}>
       <Header as='h2'>Pillars</Header>
       <p>
         This article is for raiders who wish to understand how Coup Classic’s
@@ -170,32 +170,31 @@ const LootPolicy = () => (
         You are allowed to bid on any non-legendary items that you can equip or
         use. There is no hard priority system in play, though we do emphasize
         that we expect raiders to do the following:
-        <ul>
-          <li>
-            <b>Be complete experts on their own classes itemization.</b>
-            <br />
-            <i>
-              You should know which stats matter for you and which ones don’t.
-              We also encourage our raiders to have a personal gearing plan that
-              extends into the end of Naxx, so that they will know the expected
-              ‘lifespan’ of items they might bid on.
-            </i>
-          </li>
-          <li>
-            <b>Have decent awareness of what other classes need.</b>
-            <br />
-            <i>
-              It would be ridiculous to expect each raider to have every BIS
-              list of every class memorized, but situations will occur when a
-              raider might see a potential upgrade drop, which for another class
-              might be BIS until Naxx, for example. Leadership may step in for
-              cases like these and require folks to hold their bid and let
-              another raider bid on a BIS item that they will utilize for months
-              or even years.
-            </i>
-          </li>
-        </ul>
       </p>
+      <ul>
+        <li>
+          <b>Be complete experts on their own classes itemization.</b>
+          <br />
+          <i>
+            You should know which stats matter for you and which ones don’t. We
+            also encourage our raiders to have a personal gearing plan that
+            extends into the end of Naxx, so that they will know the expected
+            ‘lifespan’ of items they might bid on.
+          </i>
+        </li>
+        <li>
+          <b>Have decent awareness of what other classes need.</b>
+          <br />
+          <i>
+            It would be ridiculous to expect each raider to have every BIS list
+            of every class memorized, but situations will occur when a raider
+            might see a potential upgrade drop, which for another class might be
+            BIS until Naxx, for example. Leadership may step in for cases like
+            these and require folks to hold their bid and let another raider bid
+            on a BIS item that they will utilize for months or even years.
+          </i>
+        </li>
+      </ul>
       <Divider />
       <p>
         <b style={{ color: cobalt }}>

@@ -10,7 +10,7 @@ const AboutUs = () => (
   >
     <Header as='h1'>About Us</Header>
     <Divider />
-    <Container text textAlign='left' style={{ 'padding-bottom': '50px' }}>
+    <Container text textAlign='left' style={{ paddingBottom: '50px' }}>
       <Header as='h2' textAlign='left' floated='right'>
         <a
           href='https://docs.google.com/document/d/15lVooHsIOXBQuzqXziKTkXuYDUxk-NLBH0kYn2DHIP8/edit'
