@@ -8,12 +8,7 @@ const Tooltip = ({ itemId, dkp }) => (
       data-wowhead={`item=${itemId}&domain=classic`}
       target='_blank'
     />
-
-    <span style={{ color: '#FFFFFF' }}>
-      {' : '}
-      {dkp || '???'}
-      {' DKP'}
-    </span>
+    <span style={{ color: '#FFFFFF' }}>&nbsp;{dkp || '???'}</span>
   </Container>
 );
 
