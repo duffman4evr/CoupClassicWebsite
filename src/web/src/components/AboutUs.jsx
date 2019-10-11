@@ -2,7 +2,12 @@ import React from 'react';
 import { Container, Header, Divider } from 'semantic-ui-react';
 
 const AboutUs = () => (
-  <Container style={{ 'background-color': '#DEDEDE' }}>
+  <Container
+    style={{
+      'background-color': '#DEDEDE',
+      'min-height': 'calc(100vh - 50px)'
+    }}
+  >
     <Header as='h1'>About Us</Header>
     <Divider />
     <Container text textAlign='left' style={{ 'padding-bottom': '50px' }}>

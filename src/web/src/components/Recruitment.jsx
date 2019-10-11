@@ -36,7 +36,10 @@ const displayClasses = obj => (
 
 const Recruitment = () => (
   <Container
-    style={{ 'background-color': '#DEDEDE', height: 'calc(100vh - 50px)' }}
+    style={{
+      'background-color': '#DEDEDE',
+      'min-height': 'calc(100vh - 50px)'
+    }}
   >
     <Header as='h1'>Current Recruitment Needs</Header>
     <Divider />
