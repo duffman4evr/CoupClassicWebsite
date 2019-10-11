@@ -22,8 +22,8 @@ export default class NavBar extends Component {
         >
           <Menu.Item
             as={Link}
-            to="/"
-            name="home"
+            to='/'
+            name='home'
             active={activeItem === 'home'}
             onClick={this.handleItemClick}
           >
@@ -32,8 +32,8 @@ export default class NavBar extends Component {
 
           <Menu.Item
             as={Link}
-            to="/about"
-            name="about"
+            to='/about'
+            name='about'
             active={activeItem === 'about'}
             onClick={this.handleItemClick}
           >
@@ -42,19 +42,19 @@ export default class NavBar extends Component {
 
           <Menu.Item
             as={Link}
-            to="/contact"
-            name="contact"
+            to='/contact'
+            name='contact'
             active={activeItem === 'contact'}
             onClick={this.handleItemClick}
           >
             Contact
           </Menu.Item>
 
-          <Menu.Menu position="right">
+          <Menu.Menu position='right'>
             <Menu.Item
               as={Link}
-              to="/apply"
-              name="recruitment"
+              to='/apply'
+              name='recruitment'
               active={activeItem === 'recruitment'}
               onClick={this.handleItemClick}
             >
@@ -63,8 +63,8 @@ export default class NavBar extends Component {
 
             <Menu.Item
               as={Link}
-              to="/loot"
-              name="loot"
+              to='/loot'
+              name='loot'
               active={activeItem === 'loot'}
               onClick={this.handleItemClick}
             >
@@ -73,8 +73,8 @@ export default class NavBar extends Component {
 
             <Menu.Item
               as={Link}
-              to="/prices"
-              name="items"
+              to='/prices'
+              name='items'
               active={activeItem === 'items'}
               onClick={this.handleItemClick}
             >

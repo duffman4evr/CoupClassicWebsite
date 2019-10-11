@@ -12,6 +12,10 @@ body {
   background-color: black;
 }
 
+.h1 {
+  color: white;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
