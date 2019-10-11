@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'semantic-ui-react';
+import { Image, Header } from 'semantic-ui-react';
 import ragnaros from '../media/ragnaros.jpg';
 import classic from '../media/classic.png';
 
@@ -16,6 +16,9 @@ const HomePage = () => (
         maxWidth: '25%'
       }}
     />
+    <Header as='h1' style={{ color: 'white' }}>
+      Atiesh - US West - Alliance
+    </Header>
   </div>
 );
 
