@@ -11,7 +11,7 @@ const Tooltip = ({ itemId, dkp }) => (
 
     <span style={{ color: '#FFFFFF' }}>
       {' : '}
-      {dkp}
+      {dkp || '???'}
       {' DKP'}
     </span>
   </Container>
