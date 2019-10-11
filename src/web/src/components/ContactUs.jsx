@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Header, Grid, Divider, Segment } from 'semantic-ui-react';
+import { Container, Header, Grid, Divider } from 'semantic-ui-react';
 
 const ContactUs = () => (
   <Container

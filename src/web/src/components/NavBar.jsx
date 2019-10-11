@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Menu } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
+import AllianceLogo from './Alliance';
 
 export default class NavBar extends Component {
   state = {};
@@ -14,6 +15,7 @@ export default class NavBar extends Component {
     return (
       <Menu inverted size={'massive'} fixed={'top'}>
         <Logo />
+        <AllianceLogo />
         <Menu
           inverted
           fixed={'top'}
