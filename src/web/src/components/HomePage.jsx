@@ -13,7 +13,7 @@ const HomePage = () => (
         top: '50px',
         left: '0',
         width: '25%',
-        'max-width': '25%'
+        maxWidth: '25%'
       }}
     />
   </div>

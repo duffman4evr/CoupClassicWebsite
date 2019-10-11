@@ -8,8 +8,8 @@ const cobalt = '#0050AB';
 const LootPolicy = () => (
   <Container
     style={{
-      'background-color': '#DEDEDE',
-      'min-height': 'calc(100vh - 50px)'
+      backgroundColor: '#DEDEDE',
+      minHeight: 'calc(100vh - 50px)'
     }}
   >
     <Header as='h1'>Loot Policy</Header>
