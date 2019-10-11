@@ -1,8 +1,10 @@
 import React from 'react';
-import { Container, Header, Grid, Divider } from 'semantic-ui-react';
+import { Container, Header, Grid, Divider, Segment } from 'semantic-ui-react';
 
 const ContactUs = () => (
-  <Container style={{ 'background-color': '#DEDEDE' }}>
+  <Container
+    style={{ 'background-color': '#DEDEDE', height: 'calc(100vh - 50px)' }}
+  >
     <Header as='h1'>Contact Us</Header>
     <Divider />
     <Container text textAlign='left'>
