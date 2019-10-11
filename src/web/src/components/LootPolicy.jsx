@@ -126,7 +126,7 @@ const LootPolicy = () => (
         </b>
       </p>
       <p>
-        As a guild member with the ‘Raider’ rank, you can earn DKP in the
+        As a guild member with the ‘Raider’ or 'Trial Raider' rank, you can earn DKP in the
         following ways:
       </p>
       <ul>
