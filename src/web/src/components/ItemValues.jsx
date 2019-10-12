@@ -14,10 +14,10 @@ import items from '../data/items.json';
 const itemColumns = 4;
 
 const filterOptions = [
-  { text: 'Name A-Z', value: 'name-ascending' },
-  { text: 'Name Z-A', value: 'name-descending' },
   { text: 'DKP Low-High', value: 'dkp-ascending' },
-  { text: 'DKP High-Low', value: 'dkp-descending' }
+  { text: 'DKP High-Low', value: 'dkp-descending' },
+  { text: 'Name A-Z', value: 'name-ascending' },
+  { text: 'Name Z-A', value: 'name-descending' }
 ];
 
 export default class ItemValues extends Component {
@@ -31,11 +31,9 @@ export default class ItemValues extends Component {
 
   filterByName(data) {
     if (data.value) {
-      const filtered = {};
-
-      Object.entries(items).forEach(([key, value]) => {
-        if (key.toLowerCase().includes(data.value.toLowerCase())) {
-          filtered[key] = { ...value };
+      const filtered = items.filter(entry => {
+        if (entry.name.toLowerCase().includes(data.value.toLowerCase())) {
+          return entry;
         }
       });
 
@@ -45,11 +43,42 @@ export default class ItemValues extends Component {
     }
   }
 
+  orderBy(data) {
+    const currentItems = Object.assign([], this.state.current);
+    let sortMethod = () => 0;
+
+    switch (data.value) {
+      case 'name-ascending':
+        sortMethod = (a, b) => (a.name < b.name ? -1 : 1);
+        break;
+      case 'name-descending':
+        sortMethod = (a, b) => (b.name < a.name ? -1 : 1);
+        break;
+      case 'dkp-ascending':
+        sortMethod = (a, b) => a.dkp - b.dkp;
+        break;
+      case 'dkp-descending':
+        sortMethod = (a, b) => b.dkp - a.dkp;
+        break;
+      default:
+        break;
+    }
+
+    /**
+     * side effect
+     * if we want the name filter to work after order
+     * we need to also sort the original list
+     */
+    items.sort(sortMethod);
+
+    return currentItems.sort(sortMethod);
+  }
+
   displayItems(data) {
     if (data) {
-      return Object.entries(data).map(([key, value]) => (
-        <Grid.Column key={key}>
-          <Tooltip itemId={value.id} dkp={value.dkp} itemName={key} />
+      return data.map((entry, index) => (
+        <Grid.Column key={index}>
+          <Tooltip itemId={entry.id} dkp={entry.dkp} itemName={entry.name} />
         </Grid.Column>
       ));
     } else {
@@ -71,12 +100,8 @@ export default class ItemValues extends Component {
         >
           <Header as='h1'>Item Prices</Header>
           <Divider />
-          <Container text textAlign='left' style={{ paddingBottom: '50px' }}>
-            <Header as='h2' textAlign='left'>
-              Filters
-            </Header>
-            <Divider />
-            <Grid columns={2}>
+          <Container text textAlign='right'>
+            <Grid columns={3} centered>
               <Grid.Column>
                 <Input
                   icon='search'
@@ -93,12 +118,17 @@ export default class ItemValues extends Component {
                   search
                   selection
                   options={filterOptions}
+                  onChange={(e, data) => {
+                    const orderedList = this.orderBy(data);
+                    this.setState({ current: orderedList }, refreshTooltips);
+                  }}
                 ></Dropdown>
               </Grid.Column>
             </Grid>
+            {this.state.current.length}
           </Container>
         </Container>
-        <Grid columns={itemColumns} centered inverted>
+        <Grid columns={itemColumns} centered inverted stretched>
           {this.displayItems(this.state.current)}
         </Grid>
       </Container>
