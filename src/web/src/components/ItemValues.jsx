@@ -31,13 +31,9 @@ export default class ItemValues extends Component {
 
   filterByName(data) {
     if (data.value) {
-      const filtered = items.filter(entry => {
-        if (entry.name.toLowerCase().includes(data.value.toLowerCase())) {
-          return entry;
-        }
-      });
-
-      return filtered;
+      return items.filter(entry =>
+        entry.name.toLowerCase().includes(data.value.toLowerCase())
+      );
     } else {
       return items;
     }
@@ -78,7 +74,9 @@ export default class ItemValues extends Component {
     if (data) {
       return data.map((entry, index) => (
         <Grid.Column key={index}>
-          <Tooltip itemId={entry.id} dkp={entry.dkp} itemName={entry.name} />
+          <Container style={{ border: '1px solid grey', padding: '10px' }}>
+            <Tooltip itemId={entry.id} dkp={entry.dkp} itemName={entry.name} />
+          </Container>
         </Grid.Column>
       ));
     } else {
@@ -125,10 +123,10 @@ export default class ItemValues extends Component {
                 ></Dropdown>
               </Grid.Column>
             </Grid>
-            {this.state.current.length}
           </Container>
+          <i>{this.state.current.length} Items</i>
         </Container>
-        <Grid columns={itemColumns} centered inverted stretched>
+        <Grid columns={itemColumns} centered inverted stretched celled divided>
           {this.displayItems(this.state.current)}
         </Grid>
       </Container>
