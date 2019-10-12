@@ -59,7 +59,7 @@ export default class ItemValues extends Component {
             />
           </Container>
         </Container>
-        <Grid columns={4} centered inverted divided>
+        <Grid columns={4} centered inverted>
           {Object.entries(this.state.current).map(([key, value]) => (
             <Grid.Column key={key}>
               <Tooltip itemId={value.id} dkp={value.dkp} itemName={key} />
