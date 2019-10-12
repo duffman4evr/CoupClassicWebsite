@@ -71,15 +71,20 @@ const LootPolicy = () => (
         knowledge of how powerful the items are. Better items cost more.
       </p>
       <p>
-        Raiders earn DKP by attending raids, being on time, and generally
+        Raiders and Trial Raiders earn DKP by attending raids, being on time, and generally
         contributing to the guild. See the FAQ below for a complete list of all
         the ways a raider can attain DKP. DKP earnings from guild bank
         contributions are capped each week.
       </p>
       <p>
         Raiders that are online 15 minutes before raid start but don't make it
-        into the raid are placed on the standby list. They earn DKP for boss
-        kills just the same as raider that's in the instance.
+        into the raid can be placed on the standby list, if they wish. When the raid is full,
+        the DKP officer will call out for folks that want to be standby for the raid. These folks can
+        whisper back to the DKP officer to join the standby list.
+        <b>Being on standby means that the raider remains reachable via in-game or discord and parks their
+        main character outside the instance.</b> For their trouble, standbys earn DKP for boss
+        kills just the same as raider that's in the instance. Again, being on standby is optional,
+        but we do expect standbys to be ready to swap in quickly, in order to keep the raid running smoothly.
       </p>
       <p>
         When an item drops within a raid, raiders that can equip the item are
