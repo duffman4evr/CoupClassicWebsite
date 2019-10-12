@@ -1,9 +1,9 @@
 const wowhead = '$WowheadPower';
 
-const loadTooltips = () => {
+const refreshTooltips = () => {
   if (window[wowhead]) {
-    window[wowhead].init();
+    window[wowhead].refreshLinks();
   }
 };
 
-export default loadTooltips;
+export default refreshTooltips;
