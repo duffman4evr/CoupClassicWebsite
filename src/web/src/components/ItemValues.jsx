@@ -14,8 +14,8 @@ import items from '../data/items.json';
 const itemColumns = 4;
 
 const filterOptions = [
-  { text: 'A-Z', value: 'name-ascending' },
-  { text: 'Z-A', value: 'name-descending' },
+  { text: 'Name A-Z', value: 'name-ascending' },
+  { text: 'Name Z-A', value: 'name-descending' },
   { text: 'DKP Low-High', value: 'dkp-ascending' },
   { text: 'DKP High-Low', value: 'dkp-descending' }
 ];
@@ -53,7 +53,7 @@ export default class ItemValues extends Component {
         </Grid.Column>
       ));
     } else {
-      return <div></div>;
+      return <div />;
     }
   }
 
@@ -89,7 +89,7 @@ export default class ItemValues extends Component {
               </Grid.Column>
               <Grid.Column>
                 <Dropdown
-                  placeholder='test'
+                  placeholder='Order by...'
                   search
                   selection
                   options={filterOptions}
