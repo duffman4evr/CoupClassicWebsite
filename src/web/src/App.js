@@ -9,10 +9,12 @@ import Recruitment from './components/Recruitment';
 import Loot from './components/LootPolicy';
 import ItemPrices from './components/ItemValues';
 import PageNotFound from './components/PageNotFound';
+import PreloadAssets from './components/Preload';
 
 function App() {
   return (
     <Router>
+      <PreloadAssets />
       <NavBar />
       <div className='App'>
         <Switch>
