@@ -54,6 +54,8 @@ const Recruitment = () => (
       <Divider />
       {displayClasses(closed)}
     </Container>
+    <Divider />
+    <p>Interested? Fill out our recruitment form <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5faLI7non7Xvp9L9rGu1hfLUV4wWHLmrj4RhY0mUpIkB98A/viewform?usp=sf_link">here</a>.</p>
   </Container>
 );
 
