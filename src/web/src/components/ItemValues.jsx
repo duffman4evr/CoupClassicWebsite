@@ -5,13 +5,15 @@ import {
   Header,
   Divider,
   Input,
-  Dropdown
+  Dropdown,
+  Responsive
 } from 'semantic-ui-react';
 import Tooltip from './Tooltip';
 import refreshTooltips from '../util/tooltip-loader';
 import items from '../data/items.json';
 
 const itemColumns = 4;
+const breakPoint = 900;
 
 const filterOptions = [
   { text: 'DKP Low-High', value: 'dkp-ascending' },
@@ -27,6 +29,11 @@ export default class ItemValues extends Component {
 
   componentDidMount() {
     refreshTooltips();
+    window.addEventListener('resize', refreshTooltips);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', refreshTooltips);
   }
 
   filterByName(data) {
@@ -70,11 +77,13 @@ export default class ItemValues extends Component {
     return currentItems.sort(sortMethod);
   }
 
-  displayItems(data) {
+  displayItems(data, hasBorder) {
     if (data) {
       return data.map((entry, index) => (
         <Grid.Column key={index}>
-          <Container style={{ border: '1px solid grey', padding: '10px' }}>
+          <Container
+            style={hasBorder && { border: '1px solid grey', padding: '10px' }}
+          >
             <Tooltip itemId={entry.id} dkp={entry.dkp} itemName={entry.name} />
           </Container>
         </Grid.Column>
@@ -99,7 +108,7 @@ export default class ItemValues extends Component {
           <Header as='h1'>Item Prices</Header>
           <Divider />
           <Container text textAlign='right'>
-            <Grid columns={3} centered>
+            <Responsive as={Grid} columns={3} centered minWidth={breakPoint}>
               <Grid.Column>
                 <Input
                   icon='search'
@@ -122,13 +131,64 @@ export default class ItemValues extends Component {
                   }}
                 ></Dropdown>
               </Grid.Column>
-            </Grid>
+            </Responsive>
+            <Responsive
+              as={Grid}
+              rows={2}
+              centered
+              divided
+              maxWidth={breakPoint - 1}
+            >
+              <Grid.Row>
+                <Input
+                  icon='search'
+                  placeholder='Filter by name...'
+                  onChange={(e, data) => {
+                    const newList = this.filterByName(data);
+                    this.setState({ current: newList }, refreshTooltips);
+                  }}
+                />
+              </Grid.Row>
+              <Grid.Row>
+                <Dropdown
+                  placeholder='Order by...'
+                  search
+                  selection
+                  options={filterOptions}
+                  onChange={(e, data) => {
+                    const orderedList = this.orderBy(data);
+                    this.setState({ current: orderedList }, refreshTooltips);
+                  }}
+                ></Dropdown>
+              </Grid.Row>
+            </Responsive>
           </Container>
           <i>{this.state.current.length} Items</i>
         </Container>
-        <Grid columns={itemColumns} centered inverted stretched celled divided>
+        <Responsive
+          as={Grid}
+          columns={itemColumns}
+          centered
+          inverted
+          stretched
+          celled
+          divided
+          minWidth={breakPoint}
+        >
+          {this.displayItems(this.state.current, true)}
+        </Responsive>
+        <Responsive
+          as={Grid}
+          columns={1}
+          centered
+          inverted
+          stretched
+          celled
+          divided
+          maxWidth={breakPoint - 1}
+        >
           {this.displayItems(this.state.current)}
-        </Grid>
+        </Responsive>
       </Container>
     );
   }
