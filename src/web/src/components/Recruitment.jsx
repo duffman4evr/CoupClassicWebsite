@@ -5,7 +5,8 @@ import {
   Header,
   Grid,
   Image,
-  Popup
+  Popup,
+  Responsive
 } from 'semantic-ui-react';
 import Warrior from '../media/warrioricon.png';
 import Priest from '../media/priesticon.png';
@@ -23,15 +24,25 @@ const totalClasses =
   Object.keys(high).length +
   Object.keys(low).length +
   Object.keys(closed).length;
+const breakPoint = 900;
 
 const displayClasses = obj => (
-  <Grid columns={totalClasses}>
-    {Object.entries(obj).map(([key, value]) => (
-      <Grid.Column key={key}>
-        <Popup content={key} trigger={<Image src={value} />} />
-      </Grid.Column>
-    ))}
-  </Grid>
+  <Container>
+    <Responsive as={Grid} columns={totalClasses / 2} maxWidth={breakPoint - 1}>
+      {Object.entries(obj).map(([key, value]) => (
+        <Grid.Column key={key}>
+          <Popup content={key} trigger={<Image src={value} ui={false} />} />
+        </Grid.Column>
+      ))}
+    </Responsive>
+    <Responsive as={Grid} columns={totalClasses} minWidth={breakPoint}>
+      {Object.entries(obj).map(([key, value]) => (
+        <Grid.Column key={key}>
+          <Popup content={key} trigger={<Image src={value} ui={false} />} />
+        </Grid.Column>
+      ))}
+    </Responsive>
+  </Container>
 );
 
 const Recruitment = () => (
@@ -55,7 +66,13 @@ const Recruitment = () => (
       {displayClasses(closed)}
     </Container>
     <Divider />
-    <p>Interested? Fill out our recruitment form <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5faLI7non7Xvp9L9rGu1hfLUV4wWHLmrj4RhY0mUpIkB98A/viewform?usp=sf_link">here</a>.</p>
+    <p>
+      Interested? Fill out our recruitment form{' '}
+      <a href='https://docs.google.com/forms/d/e/1FAIpQLSd5faLI7non7Xvp9L9rGu1hfLUV4wWHLmrj4RhY0mUpIkB98A/viewform?usp=sf_link'>
+        here
+      </a>
+      .
+    </p>
   </Container>
 );
 
