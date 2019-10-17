@@ -1,5 +1,14 @@
 import React from 'react';
-import { Container, Header, Grid, Divider } from 'semantic-ui-react';
+import { Container, Header, Grid, Divider, List } from 'semantic-ui-react';
+
+const contactInfo = {
+  Evilmonstar: 'Evilmonstar#7541',
+  Helt: 'kennega#3578',
+  Hooligan: 'monkey#4660',
+  Nae: 'Nae#3276',
+  Dotdotdot: 'Dot^3#9640',
+  Switch: 'Switch#6366'
+};
 
 const ContactUs = () => (
   <Container
@@ -10,39 +19,29 @@ const ContactUs = () => (
   >
     <Header as='h1'>Contact Us</Header>
     <Divider />
-    <Container text textAlign='left'>
-      <Grid columns={3} centered>
+    <Container textAlign='left'>
+      <Grid columns={2} centered>
         <Grid.Column>
-          <Header as='h2' textAlign='left'>
-            Find Us In Game
-          </Header>
-          <ul>
-            <li>Evilmonstar</li>
-            <li>Helt</li>
-            <li>Hooligan</li>
-            <li>Nae</li>
-            <li>Dotdotdot</li>
-            <li>Switch</li>
-          </ul>
-        </Grid.Column>
-        <Grid.Column>
-          <Header as='h2' textAlign='left'>
+          <Header as='h2'>
+            Find us in game or in{' '}
             <a
               href='https://discord.gg/TVcKDtJ'
               target='_blank'
               rel='noopener noreferrer'
             >
-              Join Us In Discord
+              Discord
             </a>
           </Header>
-          <ul>
-            <li>Evilmonstar#7541</li>
-            <li>kennega#3578</li>
-            <li>monkey#4660</li>
-            <li>Nae#3276</li>
-            <li>Dot^3#9640</li>
-            <li>Switch#6366</li>
-          </ul>
+          <List>
+            {Object.entries(contactInfo).map(([inGame, inDisc], index) => (
+              <List.Item key={index}>
+                <Grid columns='equal' relaxed='very'>
+                  <Grid.Column>{inGame}</Grid.Column>
+                  <Grid.Column>{inDisc}</Grid.Column>
+                </Grid>
+              </List.Item>
+            ))}
+          </List>
         </Grid.Column>
       </Grid>
     </Container>
