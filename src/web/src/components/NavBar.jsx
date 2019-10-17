@@ -5,7 +5,8 @@ import Logo from './Logo';
 import AllianceLogo from './Alliance';
 
 const breakPoint = 900;
-
+const sidebarId = 'mobile-menu';
+const menuButtonId = 'mobile-menu-toggle';
 const menuItems = {
   left: [
     { path: '/', name: 'home', text: 'Home' },
@@ -25,7 +26,31 @@ export default class NavBar extends Component {
   handleItemClick = (e, { name }) =>
     this.setState({ ...this.state, activeItem: name });
 
-  handleMobileMenuToggle = () =>
+  clickCatcher = e => {
+    if (this.state.sidebarVisible) {
+      const sidebar = document.getElementById(sidebarId);
+      const toggleButton = document.getElementById(menuButtonId);
+
+      if (
+        e.target !== sidebar &&
+        !sidebar.contains(e.target) &&
+        e.target !== toggleButton &&
+        !toggleButton.contains(e.target)
+      ) {
+        this.handleMobileMenuToggle();
+      }
+    }
+  };
+
+  componentDidMount() {
+    window.addEventListener('click', this.clickCatcher);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('click', this.clickCatcher);
+  }
+
+  handleMobileMenuToggle = e =>
     this.setState({
       ...this.state,
       sidebarVisible: !this.state.sidebarVisible
@@ -39,6 +64,7 @@ export default class NavBar extends Component {
         <Logo />
         <AllianceLogo />
         <Responsive
+          id={menuButtonId}
           as={Button}
           maxWidth={breakPoint - 1}
           icon='align justify'
@@ -57,6 +83,7 @@ export default class NavBar extends Component {
           }}
         />
         <Sidebar
+          id={sidebarId}
           as={Menu}
           animation='overlay'
           icon='labeled'
