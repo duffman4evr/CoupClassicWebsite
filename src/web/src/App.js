@@ -13,7 +13,6 @@ import PreloadAssets from './components/Preload';
 import Dkp from './components/Dkp';
 
 function App() {
-
   return (
     <Router>
       <PreloadAssets />
