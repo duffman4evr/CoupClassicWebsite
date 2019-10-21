@@ -10,6 +10,7 @@ import Loot from './components/LootPolicy';
 import ItemPrices from './components/ItemValues';
 import PageNotFound from './components/PageNotFound';
 import PreloadAssets from './components/Preload';
+import Dkp from './components/Dkp';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/apply' component={Recruitment} />
           <Route path='/loot' component={Loot} />
           <Route path='/prices' component={ItemPrices} />
+          <Route path='/dkp' component={Dkp} />
           <Route component={PageNotFound} />
         </Switch>
       </div>
