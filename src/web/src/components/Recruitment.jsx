@@ -17,8 +17,8 @@ import Druid from '../media/druidicon.png';
 import Paladin from '../media/paladinicon.png';
 import Hunter from '../media/huntericon.png';
 
-const high = { Paladin };
-const low = { Druid, Warrior };
+const high = {  };
+const low = { Paladin, Druid, Warrior };
 const closed = { Priest, Mage, Warlock, Rogue, Hunter };
 const totalClasses =
   Object.keys(high).length +
