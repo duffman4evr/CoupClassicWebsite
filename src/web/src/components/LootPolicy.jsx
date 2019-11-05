@@ -98,11 +98,13 @@ const LootPolicy = () => (
         DKP to pay for the item, they will go into the negative.
       </p>
       <p>
-        If no one bids on a piece of loot, all bets are off. Leadership will
-        make a on-the-spot judgment call for the item. For example, leadership
-        may just shard the item, or may re-price it to be more appropriate for
-        the current raiders’ gear situations, or may just have raiders free-roll
-        for it.
+        If no one bids on a piece of loot, it will be sent to the guild disenchanter,
+        but they won't disenchant it immediately. At that point, the master looter will announce that
+        folks looking for off-spec gear can declare interest. If you'd like to use that item for an off-spec,
+        you can whisper the guild disenchanter at that point. If two or more people are interested in the item,
+        class leads and guild leadership will loot-council to determine which bidder get the item.
+        The guild disenchanter will trade the item to the winner. Definitions of what off-spec gear is can
+        be found in the FAQ below.
       </p>
       <p>
         DKP decays on a weekly basis as well. Each Sunday, every guild member’s
@@ -368,6 +370,55 @@ const LootPolicy = () => (
         planning on using. There are trade-offs that are both good and bad that
         go along with this choice. As we move forward, we may re-evaluate this
         choice to see if we can land on something better, if the need arises.
+      </p>
+      <Divider />
+      <p>
+        <b style={{ color: cobalt }}>
+          Q: Why use Loot Council for off-spec gear?
+        </b>
+      </p>
+      <p>
+         Raiders will usually not want to spend DKP on off-spec gear. On top of that, we don't want to disenchant loot that might be useful offspec loot for a raider.
+         Having a great set of offspec gear gives the guild flexibility,
+         allowing us to have raiders respec to fill needs for a raid.
+         Doing this via loot council allows us to get a few folks into offspec-ready shape more quickly.
+      </p>
+      <Divider />
+      <p>
+        <b style={{ color: cobalt }}>
+          Q: What constitutes 'off-spec' gear?
+        </b>
+      </p>
+      <p>
+         To answer this, we must first define a couple of things:
+         <ul>
+         <li> <strong>Raid Role:</strong> A raid role is either DPS, Healing, or Tanking. Ranged DPS and Melee DPS are considered part of the DPS role. </li>
+         <li> <strong>Main Role:</strong> Your main role is the raid role you negotiate with leadership are expected to fill on a week-to-week basis. Main roles can change, but they don't change often. </li>
+         </ul>
+         Off-spec gear is any equippable gear that is itemized for a different raid role than your main raid role, or that isn't useful to your main role in this tier, but can be used in a later raid tier.
+      </p>
+      <Divider />
+      <p>
+        <b style={{ color: cobalt }}>
+          Q: Why is off-spec gear defined this way?
+        </b>
+      </p>
+      <p>
+         The point of offspec gear is the same as any other gear - guild progression.
+         In this instance, it does two things: 1) gives our raid long-term flexibility by having folks able to
+         respec into other needed roles on-the-spot,
+         and 2) allows the raid to prepare for challenges of future tiers by avoiding rot on gear that isn't usable today.
+      </p>
+      <Divider />
+      <p>
+        <b style={{ color: cobalt }}>
+          Q: Can I buy off-spec gear with DKP as well?
+        </b>
+      </p>
+      <p>
+         Yes. If you don't want to leave it up to the loot council, you can use your DKP to buy offspec gear.
+         However, your DKP bid for an offspec piece takes lower priority than folks bidding to use the gear as mainspec.
+         If you make an offspec bid, please call it out in chat / discord to help avoid confusion as to why you are bidding.
       </p>
     </Container>
   </Container>
