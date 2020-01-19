@@ -15,6 +15,14 @@ const LootPolicy = () => (
     <Header as='h1'>Loot Policy</Header>
     <Divider />
     <Container text textAlign='left' style={{ paddingBottom: '50px' }}>
+
+      <Header as='h2'>Phase 3 And Beyond</Header>
+      <p>
+        Coup has voted internally, and we will be switching from a DKP system to a loot council based system
+        for BWL and beyond. Expect this page to be updated with details on that new system soon!
+        Read on to learn about how the old DKP system works.
+      </p>
+
       <Header as='h2'>Pillars</Header>
       <p>
         This article is for raiders who wish to understand how Coup Classic’s
