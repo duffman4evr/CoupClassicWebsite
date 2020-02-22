@@ -15,8 +15,7 @@ const menuItems = {
   ],
   right: [
     { path: '/apply', name: 'recruitment', text: 'Recruitment' },
-    { path: '/loot', name: 'loot', text: 'Loot Policy' },
-    { path: '/prices', name: 'prices', text: 'Item Prices' }
+    { path: '/loot', name: 'loot', text: 'Loot Policy' }
   ]
 };
 

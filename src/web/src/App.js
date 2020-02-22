@@ -7,7 +7,6 @@ import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
 import Recruitment from './components/Recruitment';
 import Loot from './components/LootPolicy';
-import ItemPrices from './components/ItemValues';
 import PageNotFound from './components/PageNotFound';
 import PreloadAssets from './components/Preload';
 
@@ -23,7 +22,6 @@ function App() {
           <Route path='/contact' component={ContactUs} />
           <Route path='/apply' component={Recruitment} />
           <Route path='/loot' component={Loot} />
-          <Route path='/prices' component={ItemPrices} />
           <Route component={PageNotFound} />
         </Switch>
       </div>

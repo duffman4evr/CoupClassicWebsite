@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, Header } from 'semantic-ui-react';
-import ragnaros from '../media/ragnaros.jpg';
+import ragnaros from '../media/nefarian.jpg';
 import classic from '../media/classic.png';
 
 const HomePage = () => (
